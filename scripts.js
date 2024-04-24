@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    console.log("Ready to load book reviews!");
+    console.log("Website Ready!");
 });
