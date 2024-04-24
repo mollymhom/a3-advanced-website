@@ -40,3 +40,14 @@ body, html {
 .mt-5 {
     margin-top: 30px;
 }
+
+.about-section {
+    padding: 30px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.text-center {
+    text-align: center;
+}
