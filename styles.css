@@ -25,8 +25,7 @@ body, html {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
 }
 
@@ -34,47 +33,18 @@ body, html {
 .container {
     padding-top: 20px;
     min-height: calc(100% - 60px); /* Adjust based on header/footer height */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-/* Utility Classes */
-.mt-5 {
-    margin-top: 30px;
-}
-
-.about-section {
-    padding: 30px;
-    background: #f8f8f8;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.card {
+    flex: 0 1 18rem; /* Allows the card to grow and shrink but not smaller than 18rem */
+    margin-bottom: 1rem; /* Provides space below each card */
 }
 
 .text-center {
     text-align: center;
-}
-
-/* Rest of your CSS ... */
-
-/* Blog Header */
-.blog-header {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.blog-meta, .blog-comments, .blog-date {
-    color: #6c757d;
-    font-size: 0.875rem;
-    display: block; /* or 'inline' depending on your layout */
-    margin-bottom: 0.5rem;
-}
-
-.blog-meta span {
-    margin-right: 0.5rem;
-}
-
-.blog-comments {
-    float: right;
-    margin-right: 0;
 }
 
 /* Blog Post */
@@ -92,23 +62,7 @@ body, html {
     margin-bottom: 1rem;
 }
 
-.book-covers {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0 auto 2rem auto;
-}
-
 /* Utility Classes */
-.container {
-    max-width: 900px;
-    margin: 0 auto; /* Center the container */
-    padding: 2rem;
-    background: #f8f9fa;
-}
-
-/* Footer Adjustment for new content */
-.footer {
-    position: relative; /* changed from fixed to relative */
-    bottom: auto; /* no need for fixed footer in this layout */
+.mt-5 {
+    margin-top: 30px;
 }
